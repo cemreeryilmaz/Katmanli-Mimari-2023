@@ -13,7 +13,7 @@ namespace FinalProject.DataAccess.Concrete.EntityFramework.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=EFAPC90\SQLEXPRESS;initial catalog=Nortwind;integrated security=true;MultipleActiveResultSets=true;TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer(@"Server=Cemre\SQLEXPRESS;initial catalog=Nortwind;integrated security=true;MultipleActiveResultSets=true;TrustServerCertificate=true");
         }
 
         public DbSet<Product> Products { get; set; }
